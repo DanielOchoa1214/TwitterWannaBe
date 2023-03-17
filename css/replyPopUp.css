@@ -1,0 +1,42 @@
+#replies-popup {
+    background-color: black;
+    position: fixed;
+    border: 1px solid rgb(196, 196, 196, 0.3);
+    border-radius: 30px;
+    width: 40%;
+    z-index: 1;
+    margin-top: 1.5rem;
+}
+
+#replies-popup::backdrop{
+    background-color: rgba(91, 112, 131, 0.4);
+    overflow-y: hidden;
+}
+
+.repling-text {
+    color: white;
+    font-weight: bold;
+    margin-left: 1rem;
+}
+
+#repling-tweet {
+    margin-top: 0.5rem;
+}
+
+.reply-tweet-btn {
+    background-color: rgb(29, 155, 240);
+    color: white;
+    padding-inline: 5%;
+    border: none;
+    border-radius: 30px;
+    font-size: large;
+    display: block;
+    margin-top: 10px;
+    margin-left: auto;
+    padding-block: 1rem;
+    cursor: pointer;
+}
+
+.reply-tweet-btn:active{
+    background-color: rgb(73, 126, 162);
+}

@@ -1,0 +1,93 @@
+#profile-section {
+    max-width: 80%;
+    box-sizing: border-box;
+}
+
+
+#profile-section > div:first-child {
+    height: 25rem;
+    max-width: 100%;
+}
+
+#banner-picture {
+    aspect-ratio: 16 / 5;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+#profile-picture {
+    width: 15rem;
+    height: 15rem;
+    object-fit: cover;
+    clip-path: circle(35%);
+}
+
+.picture-border {
+    width: 15rem;
+    clip-path: circle(38%);
+    background-color: black;
+    position: relative;
+    top: -8rem;
+}
+
+#name {
+    font-size: 25px;
+    margin: 20px 0 0 0;
+}
+
+#name, .follow-ers-num {
+    color: white;
+    font-weight: bold;
+}
+
+#user-name {
+    color: gray;
+    margin-block: 5px 25px;
+}
+
+.follow-ers-num {
+    display: inline;
+}
+
+.follow-ers-num span {
+    color: gray;
+    font-weight: initial;
+    margin-right: 1.5rem;
+}
+
+#profile-btns {
+    display: flex;
+    justify-content: center;
+    margin-block: 40px;
+    gap: 100px;
+    border-top: 1px solid rgb(196, 196, 196, 0.3);
+    border-bottom: 1px solid rgb(196, 196, 196, 0.3);
+    padding-block: 1rem;
+}
+
+#my-tweets, #my-liked-tweets {
+    color: white;
+    background-color: transparent;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    transition: background-color 0.4s ease-in-out;
+    padding: 0.5rem 0.9rem;
+    font-size: 1.2rem;
+}
+
+.active-profile-page {
+    border-bottom: 3px solid rgb(0, 183, 255) !important;
+}
+
+#my-tweets:hover, #my-liked-tweets:hover {
+    background-color: rgba(240, 255, 255, 0.3);
+}
+
+#profile-tweets {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column-reverse;
+}

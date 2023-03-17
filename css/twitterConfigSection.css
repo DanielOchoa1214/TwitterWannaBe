@@ -1,0 +1,57 @@
+#config-section {
+    max-width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+    padding-inline: 1.5rem;
+    height: 100vh;
+}
+
+.config-main-icon {
+    fill: white;
+    width: 15%;
+    padding-top: 1rem;
+    padding-left: 1rem;
+}
+
+.side-bar-btn {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 1.4rem;
+    transition: background-color 0.4s ease-in-out;
+    padding: 0.5rem 0.9rem;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.side-bar-btn:hover {
+    background-color: rgba(240, 255, 255, 0.3);
+}
+
+.side-tweet-btn{
+    width: 100%;
+}
+
+.side-bar-icon {
+    height: 2.5rem;
+    fill: white;
+}
+
+.close-sesion-btn {
+   position: fixed;
+   top: calc(100vh - 4.5rem);
+}
+
+.cls-1 {
+    fill:none;
+    stroke:#FFF;
+    stroke-linecap:round;
+    stroke-miterlimit:56;
+    stroke-width:28px;
+}

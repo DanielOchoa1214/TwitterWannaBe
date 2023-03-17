@@ -1,0 +1,35 @@
+#tweeting-popup {
+    background-color: black;
+    position: fixed;
+    border: 1px solid rgb(196, 196, 196, 0.3);
+    border-radius: 30px;
+    width: 40%;
+    z-index: 1;
+    margin-top: 1.5rem;
+}
+
+#tweeting-popup::backdrop{
+    background-color: rgba(91, 112, 131, 0.4);
+    overflow-y: hidden;
+}
+
+.exit-btn {
+    display: flex;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.4s ease-in-out;
+    border-radius: 40px;
+    width: 9%;
+    justify-content: center;
+    padding-block: 0.5rem;
+}
+
+.exit-btn:hover{
+    background-color: rgba(240, 255, 255, 0.3);
+}
+
+.exit-btn .icon {
+    fill: white;
+    width: 85%;
+}

@@ -1,0 +1,39 @@
+#tweet-replies-page {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#tweet-replies-page > .tweet{
+    width: 85%;
+    margin-top: 1rem;
+}
+
+.replies-page {
+    margin-top: 2rem;
+    width: 80%;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.home-button {
+    display: flex;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.4s ease-in-out;
+    border-radius: 40px;
+    align-items: center;
+    width: 9%;
+    height: 5rem;
+    margin: 1rem;
+}
+
+.home-button:hover{
+    background-color: rgba(240, 255, 255, 0.3);
+}
+
+.home-button .icon {
+    fill: white;
+    width: 90%;
+}

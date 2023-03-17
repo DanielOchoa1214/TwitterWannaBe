@@ -1,0 +1,149 @@
+#tweets-div{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#tweets-section{
+    max-width: 80%;
+}
+
+#tweets-section > div{
+    width: 85%;
+    margin-inline: auto;
+}
+
+.tweet {
+    display: grid;
+    grid-template-columns: 10% 30% 30% 30%;
+    grid-template-rows: 20% auto 25%;
+    padding-bottom: 1rem;
+    border: 1px solid rgb(196, 196, 196, 0.3);
+    border-radius: 30px;
+    margin-inline: 0px;
+    cursor: pointer;
+}
+
+.tweet-owner, .tweet-content {
+    color: whitesmoke;
+    word-wrap: break-word;
+    cursor: pointer;
+}
+
+.tweet-owner{
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    font-weight: bold;
+}
+
+.tweet-content {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    padding-right: 4rem;
+}
+
+.tweet img{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    width: 100%;
+    border-radius: 50%;
+    clip-path: circle(35%);
+    cursor: pointer;
+}
+
+.like-btn, .retweet-btn, .reply-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+    padding: 0.4rem 0.7rem;
+    margin: auto;
+    border-radius: 20px;
+    color: white;
+    background-color: transparent;
+    border: none;
+    transition: background-color 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+.retweet-btn {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.like-btn {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.reply-btn {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.reply-icon, .retweet-icon, .like-icon {
+    height: 1.2rem;
+    margin-right: 0.5rem;
+    fill: gray;
+}
+
+.reply-btn:hover{
+    color: aqua;
+    background-color: rgb(127, 255, 212, 0.2);
+}
+
+.reply-btn:hover .reply-icon {
+    fill: aqua;
+}
+
+.like-btn:hover{
+    color: red;
+    background-color: rgb(186, 64, 121, 0.2);
+}
+
+.like-btn:hover .like-icon {
+    fill: red;
+}
+
+.retweet-btn:hover{
+    color: greenyellow;
+    background-color: rgba(117, 186, 64, 0.2);
+}
+
+.retweet-btn:hover .retweet-icon {
+    fill: greenyellow;
+}
+
+/* Como se ven los botones activos*/
+
+.liked {
+    color: red;
+}
+
+.like-icon-active{
+    height: 1.2rem;
+    margin-right: 0.5rem;
+    fill: red;
+}
+
+.retweeted {
+    color: greenyellow;
+}
+
+.retweet-icon-active{
+    height: 1.2rem;
+    margin-right: 0.5rem;
+    fill: greenyellow;
+}

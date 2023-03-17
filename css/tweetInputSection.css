@@ -1,0 +1,64 @@
+body {
+    background-color: black;
+    font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 8px;
+}
+
+main {
+    display: flex;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.input-div{
+    display: flex;
+    align-items: center;
+}
+
+.input-div img{
+    height: 4.5vw;
+    display: inline;
+}
+
+.tweet-writing-input {
+    width: -webkit-fill-available;
+    padding: 5%;
+    box-sizing: border-box;
+    background-color: black;
+    border: none;
+    color: whitesmoke;
+    font-size: 20px;
+    overflow-wrap: break-word;
+    font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    resize: none;
+}
+
+.tweet-writing-input:focus {
+    outline: none;
+}
+
+.tweet-btn {
+    background-color: rgb(29, 155, 240);
+    color: white;
+    padding-inline: 5%;
+    border: none;
+    border-radius: 30px;
+    font-size: large;
+    display: block;
+    margin-top: 10px;
+    margin-left: auto;
+    padding-block: 1rem;
+    cursor: pointer;
+}
+.tweet-btn:active{
+    background-color: rgb(73, 126, 162);
+}
+
+.section-title {
+    color: whitesmoke;
+    font-size: 20px;
+    margin: 10px;
+}
